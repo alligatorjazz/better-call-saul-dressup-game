@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://s0fpn7upwkht"]
+[gd_scene load_steps=6 format=3 uid="uid://s0fpn7upwkht"]
 
+[ext_resource type="Script" path="res://scenes/MainMenu.gd" id="1_3x8ta"]
 [ext_resource type="FontFile" uid="uid://c7ivmojyarvko" path="res://fonts/Sevillana-Regular.ttf" id="1_im1ri"]
 
 [sub_resource type="SystemFont" id="SystemFont_gb3q0"]
@@ -14,6 +15,7 @@ font_size = 64
 
 [node name="MainMenu" type="Node2D"]
 scale = Vector2(1.00825, 0.991008)
+script = ExtResource("1_3x8ta")
 
 [node name="Title" type="VBoxContainer" parent="."]
 offset_left = 81.3287
@@ -36,10 +38,12 @@ label_settings = SubResource("LabelSettings_fdygh")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="StartButton" type="Button" parent="."]
 offset_left = 1473.84
 offset_top = 923.303
 offset_right = 1569.84
 offset_bottom = 954.303
 scale = Vector2(4, 4)
 text = "Start Game"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_startbutton_pressed"]
