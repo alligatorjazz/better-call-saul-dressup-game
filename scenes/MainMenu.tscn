@@ -35,3 +35,11 @@ text = "~Dressup Game~"
 label_settings = SubResource("LabelSettings_fdygh")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1473.84
+offset_top = 923.303
+offset_right = 1569.84
+offset_bottom = 954.303
+scale = Vector2(4, 4)
+text = "Start Game"

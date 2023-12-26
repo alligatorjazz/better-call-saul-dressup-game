@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b75d7sjqrmf4p"]
+
+[sub_resource type="SystemFont" id="SystemFont_mp0lw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_22c4p"]
+font = SubResource("SystemFont_mp0lw")
+font_size = 96
+
+[node name="Dressup" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 664.0
+offset_top = 394.0
+offset_right = 1220.0
+offset_bottom = 526.0
+size_flags_horizontal = 4
+text = "Hello world!"
+label_settings = SubResource("LabelSettings_22c4p")
