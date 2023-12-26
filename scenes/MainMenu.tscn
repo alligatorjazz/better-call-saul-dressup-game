@@ -1,3 +1,37 @@
-[gd_scene format=3 uid="uid://s0fpn7upwkht"]
+[gd_scene load_steps=5 format=3 uid="uid://s0fpn7upwkht"]
+
+[ext_resource type="FontFile" uid="uid://c7ivmojyarvko" path="res://fonts/Sevillana-Regular.ttf" id="1_im1ri"]
+
+[sub_resource type="SystemFont" id="SystemFont_gb3q0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4qfda"]
+font = SubResource("SystemFont_gb3q0")
+font_size = 96
+
+[sub_resource type="LabelSettings" id="LabelSettings_fdygh"]
+font = ExtResource("1_im1ri")
+font_size = 64
 
 [node name="MainMenu" type="Node2D"]
+scale = Vector2(1.00825, 0.991008)
+
+[node name="Title" type="VBoxContainer" parent="."]
+offset_left = 81.3287
+offset_top = 112.007
+offset_right = 789.329
+offset_bottom = 336.007
+metadata/_edit_group_ = true
+
+[node name="TitleText" type="Label" parent="Title"]
+layout_mode = 2
+text = "Better Call Saul"
+label_settings = SubResource("LabelSettings_4qfda")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleText" type="Label" parent="Title"]
+layout_mode = 2
+text = "~Dressup Game~"
+label_settings = SubResource("LabelSettings_fdygh")
+horizontal_alignment = 1
+vertical_alignment = 1
